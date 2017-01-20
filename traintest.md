@@ -8,7 +8,8 @@
 
 ## Train/Test Split
   - Has a test, train, split function.
-  ```python
+ 
+```python
 # Split the data into training and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 # Fit the model against the training data
@@ -18,7 +19,6 @@ lr.score(X_test, y_test)
 ```
 
 - Code turns around 30% of the data to test data.
--
 
 ## K-Fold Cross Validation
 - Steps:
@@ -26,7 +26,7 @@ lr.score(X_test, y_test)
   - At each iteration: turn 1 fold to test data, and the union of the other folds as train data.
   - Calculate training accuracy.
 - Average **training** performance becomes the estimate of out-of-sample performance.
-- ### Benefits:
+- **Benefits**:
   - More reliable for out-of-performance than train and split
   - can be used for selecting **tuning parameters**
 - Drawbacks: computationally expensive.  
