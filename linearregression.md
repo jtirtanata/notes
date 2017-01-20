@@ -6,14 +6,14 @@
   - linear regression
 
 ## Seeing correlation
-- ### seaborn.
+- ***seaborn***
   - If some of the variables are highly correlated, it could suggest *multicollinearity*. This is something to watch out as it can **destabilize** our model.
   - See which variables are correlated with the **target variable Y**
   - `sns.pairplot(df, size= 1.2, aspect=1.5)`
-- ### pandas
+- ***pandas***
   - `df.corr()`
   - it will give the correlations between the different variables
-- ### statsmodels
+- ***statsmodels***
   - package:   
     - `import statsmodels.api as sm`
     - `import statsmodels.formula.api as smf`
@@ -32,7 +32,7 @@
       - The t-scores are values that the coefficients score in the Student's T Distribution and the P(|t|) field represents the probability of finding such a t-score if the actual value of the coefficient were 0.
       - Measures our degree of belief that the coefficient for each variable should be zero. - Thus, the lowest P-values represent the most likely predictors to be impacting the response.
     - Final column returns a 95% Confidence Interval for the value of each coefficient.
-- ### sklearn
+- ***sklearn***
   - Can pull the summary variables individually
   - Don't get a nice summary like Patsy
   - sklearn is very rich, lots of things that we can use.
