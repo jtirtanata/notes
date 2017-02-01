@@ -45,3 +45,7 @@
 ## Notes
 - You can have both supervised and unsupervised. E.g. Community detection.
 - Unstructured world can give us information that we don't expect.
+
+## Train & Test
+- Healthy model: Test errors goes down, training errors goes up but just slightly
+-
