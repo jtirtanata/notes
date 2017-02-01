@@ -38,3 +38,9 @@ plot_approximation(est, ax, label='degree=%d' % degree)
 ```python
 X_train, X_test, y_train, y_test = train_test_split(df_X, df['log_dtg'], test_size=0.25)
 ```
+
+# Pickling
+- What is it?
+  - Serialize and deserialize
+  - Turn objects to byte stream
+  - You can just dump the pickle in a file
