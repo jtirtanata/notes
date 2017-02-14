@@ -13,6 +13,6 @@ For each question below, say yes, no or somewhat for these classification algori
 |:-:|---|----|----|----|----|----|----|----|:-:|
 |Interpretable|No|Yes|Yes|Difficult - Depends on the transformation|Yes|You get feature importance|Maybe|
 |Multi class|Yes|No|No|No|Yes|Yes|Yes|
-|Scalable (features)|No|Yes|No|No|No, If you cut the tree length, you might not get the features that are good. If you don't, it will overfit.|Yes|Yes|
-|Scalable (data points)|No|Yes|No|No|Yes|Yes|Yes|
-|Diverse features||   |   |   |   ||||
+|Scalable (features)|No|Yes|Yes (Like LG)|No|No, If you cut the tree length, you might not get the features that are good. If you don't, it will overfit.|Yes|Yes|
+|Scalable (data points)|No|No|Yes|No|Yes|Yes|Yes|
+|Diverse features|No (It's distance related)|   |   |   |   ||No (hard to add features that are not probabilities)|
