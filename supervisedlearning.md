@@ -71,6 +71,80 @@
   - Low variance, high bias.
   - Can handle categorical really well.
   - SCALE features
-  -
 
-  
+# SVM
+- another distance metrix: cosine
+- kernel = transformation
+- it's all driven by dot product
+- you can linearly separate your data by using a kernel.  
+- How do you choose ?
+  - with 3 dimension, it's pretty easy
+- You can tune for c
+  - c = [1, 10, 100, 1000]
+
+- Use gridsearch to march through all of the parameters and give you the best option.
+- Hyperplane = if you have more than 3 dimensions
+- What determines the hyperplane
+  - C, kernel, w
+- few support vectors: OVERFIT!
+  - just picking 2 training points and making a line.
+- many support vectors: generalized.
+- Outliers does not play a part. (if you're on the right side!)
+  - Usually you don't have outliers at the wrong side.
+- Cost?
+  - Training is expensive.
+  - But once you train, test is not that bad.
+- You have to scale because this is still using the distance metric.
+- USE standard scaler.
+- Normalize beings it from 0 to 1.
+
+# Preprocessing
+- preprocessing.normalization
+- only for svm: standard scaler
+
+# Dummy variables
+- add intercept for logistic regression (sklearn doesn't add it automatically!)
+- knn no intercept needed
+- svm - sklearn adds it automatically
+
+## Accuracy metrix
+- Confusion Matrix
+- If your classes are unbalanced, do recall or precision
+- F1 = harmonic mean
+- Depends on your case. See which one is more important.
+- Type 1 or Type 2 error:
+- In logistic regression:
+  - Higher threshold: More sure about positives: lower recall, higher precision.
+- Each threshold is a different model.
+- ROC curves
+  - How good a model is the AUC
+  - Sensitivity vs. 1-specificity
+
+# Decision Trees
+- Break it down to a bunch of decisions
+- Prone to overfit
+- How?
+  - Greedy:
+    - Have all combinatorics
+  - Non-greedy
+    - Start with a good fit.
+    - Quantification ?
+      - ginny: 1- (sum of probabilities of each class)^2
+      - entropy: kinda do the same thing.
+      - basically, make a split where you can bunch up one class as much as possible.
+      - For numerical, it splits it based on the best k.
+      - How to do it
+        - If too little samples, don't split
+        - Max depth
+      - Use multiple trees  (and then avg it later)
+        - How to change it (a little bit)?
+        - Sample with replacement.
+        - This is called tree bagging.
+        - Randomly choose features.
+Avoid overfit
+- Tree - WILL OVERFIT
+- Random forest
+  - performs really well
+  - not interpretative
+  - Can give you the feature importance
+- 

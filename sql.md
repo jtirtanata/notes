@@ -64,7 +64,10 @@ GROUP BY
 ```
 Which employee made the most sales (by total cost)?
 ```sql
-SELECT lastName, firstName, totalSales FROM Employees JOIN (SELECT EmployeeID, SUM(totalPrice) as totalSales from Orders JOIN (SELECT
+SELECT lastName, firstName, totalSales FROM Employees JOIN
+(SELECT EmployeeID, SUM(totalPrice) as totalSales
+from Orders JOIN
+(SELECT
 	OrderID, SUM(Price) as totalPrice
 FROM
 	Products

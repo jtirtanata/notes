@@ -1,0 +1,33 @@
+1. Histograms vs. Barplots
+2. How to solve underfitting
+  - reduce regularization penalty
+  - increase number of features
+- Address overfitting
+  - more data!
+- Linear Regression
+  - NOT just a linear relationship (can be polynomial)
+  - homoscedacity : This assumption means that the variance around the regression line is the same for all values of the predictor variable (X). The plot shows a violation of this assumption.
+  - independent errors
+- Sampling: stratified sampling is recommended for classification
+- Logistic regression, regression technique?
+  - NOPE!
+  - It's a classification
+- TP / (TP + FN): sensitivity
+- Recall: you really don't want to miss your positive.
+  - How are you doing with your false negatives?
+  - How many you found.
+  - How many you missed out.
+- TP / (TP + FP): precision
+  - How many that we find are actually relevant?
+  - get rid of false positives
+- Lots ofe features, not a lot of training samples.
+  - linear svm
+  - Gaussian: polynomial
+- Gaussian kernel:
+  - rbf kernel
+  - transformation
+  - richer feature space, increase number of features
+  - gamma function
+  - think of if as a polynomial.
+- Sum of squared error (SSE): measures variation in the dependent variable 
+- SST : measures variations in the dependent variable
